@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    Authentic Japanese Ramen
+{% endblock title %}
+
+{% block content %}
+    <header>
+        <nav id="is-babyblue">
+            <a href="{% url 'recipe_list' %}">Main page</a>
+        </nav>
+    </header>
+    <main>
+        <form id="grid-items" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button>Edit</button>
+          </form>
+    </main>
+    {% endblock content %}

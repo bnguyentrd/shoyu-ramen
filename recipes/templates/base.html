@@ -1,0 +1,20 @@
+{% load static %}
+<!doctype html>
+<html>
+    <center>
+    <head>
+        <title>
+            {% block title %}{% endblock title %}
+        </title>
+        <link rel="stylesheet" href="{% static "css/recipes.css" %}">
+    </head>
+    <body>
+    {% block content %}{% endblock content %}
+        <footer id="is-blue">
+            <div
+            id="is-blue">>ラーメンの芸術 - The Art of Ramen!
+            </div>
+        </footer>
+    </body>
+</center>
+</html>
